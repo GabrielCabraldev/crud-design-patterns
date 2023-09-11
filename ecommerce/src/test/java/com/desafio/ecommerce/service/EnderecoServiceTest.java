@@ -37,20 +37,20 @@ public class EnderecoServiceTest {
     @Test
     public void testCriarEnderecoDTO() {
         EnderecoDTO enderecoDTO = new EnderecoDTOBuilder()
-                .logradouro("Rua 123")
-                .cidade("Cidade A")
-                .estado("Estado A")
+                .logradouro("Rua teste")
+                .cidade("Cotia")
+                .estado("MG")
                 .cep("12345-678")
-                .bairro("Bairro A")
+                .bairro("Novo bairro")
                 .numero(1)
                 .emailRelacionado("cliente@teste.com")
                 .build();
 
-        assertEquals("Rua 123", enderecoDTO.getLogradouro());
-        assertEquals("Cidade A", enderecoDTO.getCidade());
-        assertEquals("Estado A", enderecoDTO.getEstado());
+        assertEquals("Rua teste", enderecoDTO.getLogradouro());
+        assertEquals("Cotia", enderecoDTO.getCidade());
+        assertEquals("MG", enderecoDTO.getEstado());
         assertEquals("12345-678", enderecoDTO.getCep());
-        assertEquals("Bairro A", enderecoDTO.getBairro());
+        assertEquals("Novo bairro", enderecoDTO.getBairro());
         assertEquals(1, enderecoDTO.getNumero());
         assertEquals("cliente@teste.com", enderecoDTO.getEmailRelacionado());
 

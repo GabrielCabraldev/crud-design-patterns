@@ -13,7 +13,7 @@ public class EnderecoDTO {
     private Integer numero;
 
     public EnderecoDTO(){
-        //usado para criar uma instancia dentro do EnderecoDTOBuilder
+        //construtor usado apenas para instanciar
     }
 
 }

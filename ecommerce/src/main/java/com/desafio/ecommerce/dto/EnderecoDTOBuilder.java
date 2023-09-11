@@ -1,5 +1,8 @@
 package com.desafio.ecommerce.dto;
 
+import lombok.Data;
+
+@Data
 public class EnderecoDTOBuilder {
     private EnderecoDTO enderecoDTO = new EnderecoDTO();
 
