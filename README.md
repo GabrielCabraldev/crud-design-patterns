@@ -21,6 +21,8 @@ da melhor forma, segue abaixo padrões que usei a criação das duas apis (ViaCe
 
 Foquei principalmente no desaclopamento da lógica e nas boas praticas de single responsabily
 
+Para os testes unitários e do sonarLint, enviei envidencias junto no email;
+
 # Como usar 
 * Para facilitar a execução optei por deixar as duas apis no mesmo pacote, assim rodando uma você poderá acessar todos 
 os end-points das duas apis.
