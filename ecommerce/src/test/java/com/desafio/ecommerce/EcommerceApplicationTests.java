@@ -8,6 +8,7 @@ class EcommerceApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//classe de testes
 	}
 
 }

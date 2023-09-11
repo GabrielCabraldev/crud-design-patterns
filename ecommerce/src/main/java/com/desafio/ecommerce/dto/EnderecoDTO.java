@@ -12,4 +12,8 @@ public class EnderecoDTO {
     private String emailRelacionado;
     private Integer numero;
 
+    public EnderecoDTO(){
+        //usado para criar uma instancia dentro do EnderecoDTOBuilder
+    }
+
 }

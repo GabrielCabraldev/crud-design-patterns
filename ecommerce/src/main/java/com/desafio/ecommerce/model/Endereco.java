@@ -10,6 +10,10 @@ import java.io.Serializable;
 @Table(name = "enderecos")
 public class Endereco implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+    //usando serialVersionUID para garantir que as versões
+    // serializadas e deserializadas da classe tenham a mesma versão.
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

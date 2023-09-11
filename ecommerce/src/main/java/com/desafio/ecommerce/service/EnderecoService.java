@@ -2,10 +2,11 @@ package com.desafio.ecommerce.service;
 
 
 import com.desafio.ecommerce.dto.EnderecoDTO;
+import com.desafio.ecommerce.dto.EnderecoDTOBuilder;
 import com.desafio.ecommerce.model.Cliente;
 import com.desafio.ecommerce.model.Endereco;
-import com.desafio.ecommerce.repository.ClienteRepository;
-import com.desafio.ecommerce.repository.EnderecoRepository;
+import com.desafio.ecommerce.repositories.ClienteRepository;
+import com.desafio.ecommerce.repositories.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -59,14 +60,16 @@ public class EnderecoService {
         List<EnderecoDTO> enderecosDTO = new ArrayList<>();
 
         for (Endereco endereco : enderecos) {
-            EnderecoDTO enderecoDTO = new EnderecoDTO();
-            enderecoDTO.setLogradouro(endereco.getLogradouro());
-            enderecoDTO.setCidade(endereco.getCidade());
-            enderecoDTO.setEstado(endereco.getEstado());
-            enderecoDTO.setCep(endereco.getCep());
-            enderecoDTO.setBairro(endereco.getBairro());
-            enderecoDTO.setNumero(endereco.getNumero());
-            enderecoDTO.setEmailRelacionado(email);
+            EnderecoDTO enderecoDTO = new EnderecoDTOBuilder()
+                    .logradouro(endereco.getLogradouro())
+                    .cidade(endereco.getCidade())
+                    .estado(endereco.getEstado())
+                    .cep(endereco.getCep())
+                    .bairro(endereco.getBairro())
+                    .numero(endereco.getNumero())
+                    .emailRelacionado(email)
+                    .build();
+
             enderecosDTO.add(enderecoDTO);
         }
 

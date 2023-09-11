@@ -1,7 +1,7 @@
 package com.desafio.ecommerce.service;
 
 import com.desafio.ecommerce.model.Cliente;
-import com.desafio.ecommerce.repository.ClienteRepository;
+import com.desafio.ecommerce.repositories.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
