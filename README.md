@@ -27,6 +27,10 @@ os end-points das duas apis.
 
 * Ela está localizada dentro do pacote ecommerce = package com.desafio.ecommerce.viacep
 
+* Enviarei no email as querys que devem ser executadas no Mysql para que o teste faça efeito.
+
+* Atente-se a porta do seu localHost, por padrão é 8080, mas pode ser alterada
+
 # Para primeira API - VIA CEP
 temos apenas 1 método de acesso, sendo ele GET :
 http://localhost:8080/api/viacep/{cep}
