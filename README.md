@@ -1,5 +1,5 @@
 # Desafio Proposto
- Desafio proposto para entrevista tecnica, empresa confidencial
+Estudo sobre Arquitetura SOLID e padrões de projeto
 
 
 # Tecnologias usadas
