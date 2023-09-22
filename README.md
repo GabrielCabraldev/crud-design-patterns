@@ -12,7 +12,7 @@ MySQL Workbench,
 Intelijj IDEA 2022.22.
 
 # Informações do projeto
-Para esse projeto, como pedia o desafio usei diversos padrões de projetos, além da 
+Para esse projeto,usei diversos padrões de projetos, além da 
 arquitetura SOLID e das boas práticas do clean code, separei em 3 camadas os padroes de projetos para usa-lós 
 da melhor forma, segue abaixo padrões que usei a criação das duas apis (ViaCep, e ecommerce)
 * criacional (factory, builder, DTOs),
@@ -28,8 +28,6 @@ Para os testes unitários e do sonarLint, enviei envidencias junto no email;
 os end-points das duas apis.
 
 * Ela está localizada dentro do pacote ecommerce = package com.desafio.ecommerce.viacep
-
-* Enviarei no email as querys que devem ser executadas no Mysql para que o teste faça efeito.
 
 * Atente-se a porta do seu localHost, por padrão é 8080, mas pode ser alterada
 
@@ -69,7 +67,6 @@ caso não exista, ele criará um novo endereço atrelado a esse email que está 
   também está como parametro na URL, então deve ser preenchido de acordo com o email cadastrado anteriormente,
   ele retornará um ou mais email de acordo com o que está salvo na base de dados.
 
-  Enviarei uma collection do postman com os dados;
 
 
 
